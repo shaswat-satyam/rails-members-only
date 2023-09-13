@@ -1,0 +1,24 @@
+<h1>All Posts</h1>
+
+<%if @posts.any?%>
+    <%@posts.each do |msg|%>
+        <div>
+            <strong>Post Id</strong>
+            <%=msg.id%>
+            <br>
+            <strong>Post Title</strong>
+            <%= msg.heading%>
+            <br>
+            <strong>Post Body</strong>
+            <%= msg.body%>
+            <br>
+            <%if user_signed_in?%>
+                <strong>Poster</strong>
+                <%= @users.find_by_id(msg.user_id).email%>
+            <%end%>
+        </div>
+        <br>
+    <%end%>
+<%else%>
+    <h1>No Posts!</h1>
+<%end%>

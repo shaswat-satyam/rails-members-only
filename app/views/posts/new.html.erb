@@ -1,0 +1,18 @@
+<%= form_with model: @post, method:"post" do |form|%>
+
+    <%= form.label :heading %>
+    <%= form.text_field :heading %>
+    <br>
+    <%= form.label :body %>
+    <br>
+    <%= form.text_field :body %>
+    <br>
+    <br>
+    <% if current_user %>
+        User ID:<%= current_user.id %>
+        <%= form.hidden_field :user_id, value: current_user.id%>
+    <% end %>
+    <br>
+    <br>
+  <%= form.submit "Create" %>
+<% end %>
