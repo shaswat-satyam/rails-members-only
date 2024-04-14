@@ -1,24 +1,14 @@
-# README
+# Rails Member Only
+This is a ruby on rails application for The Odin Project
+This is a basic blogging sites which can hide certain blogs from unauthenticated users.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Stack
+Rails, Ruby, HTML, CSS, JavaScript
 
-Things you may want to cover:
+## Instructions
+1) Clone the repo
+2) Use rails s
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## TODO
+- [ ] Pretiffy the projec
+- [ ] Deploy on some free hosting
